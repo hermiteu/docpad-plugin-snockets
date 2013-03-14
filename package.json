@@ -1,0 +1,30 @@
+{
+  "name": "docpad-plugin-snockets",
+  "version": "2.0.0",
+  "description": "Adds support for Snockets to DocPad",
+  "homepage": "http://docpad.org/plugin/snockets",
+  "keywords": [
+  "docpad",
+  "docpad-plugin",
+  "snockets"
+  ],
+  "author": "Herman Boomsma <harmus@gmail.com>",
+  "maintainers": [
+  "Herman Boomsma <harmus@gmail.com> (https://github.com/harmus)"
+  ],
+  "contributors": [
+  "Herman Boomsma <harmus@gmail.com> (https://github.com/harmus)"
+  ],
+  "repository" : {
+  "type": "git",
+  "url": "https://github.com/hermiteu/docpad-plugin-snockets.git"
+  },
+  "engines" : {
+  "node": ">=0.4",
+  "docpad": "6.x"
+  },
+  "dependencies": {
+  "snockets": "~1.3.0"
+  },
+  "main": "snockets.plugin.coffee"
+}
