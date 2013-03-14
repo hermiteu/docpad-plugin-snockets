@@ -11,7 +11,7 @@ module.exports = (BasePlugin) ->
     # Concatenate files
     concatenateFiles: (opts,next) ->
       # Prepare
-      {inExtension,outExtension,content,file} = opts
+      {file} = opts
       Snockets = require 'snockets'
       snockets = new Snockets()
 
@@ -21,7 +21,6 @@ module.exports = (BasePlugin) ->
       # Done
       next()
 
-
     # =============================
     # Events
 
@@ -29,7 +28,7 @@ module.exports = (BasePlugin) ->
     # Called per document, for each extension conversion. Used to render one extension to another.
     render: (opts,next) ->
       # Prepare
-      {inExtension,outExtension,content,file} = opts
+      {inExtension,outExtension} = opts
 
       # CoffeeScript to JavaScript
       if inExtension in ['coffee'] and outExtension in ['js',null]
